@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&family=Quicksand:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(42, 110, 60);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container .words{
+    font-family: 'Pacifico', Quicksand;
+    font-size: 80px;
+    font-weight: 700;
+}
+.name{
+    color: rgb(184, 234, 225);
+}
+.at{
+    color: pink;
+    display: flex;
+    justify-content:center
+}
+.age{
+    color: rgb(73, 159, 234);
+    display: flex;
+    justify-content: flex-end;
+}
+.birthday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 239, 244);
+}
+.birthday div{
+    flex-basis: 100px;
+}
+.birthday div p{
+    font-size: 60px;
+}
+
+.balloon{
+    width: 25rem;
+    position: absolute;
+    right: 10%;
+    bottom: 1%;
+    animation: balloon 4s linear infinite;
+}
+
+@keyframes balloon{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 10;
+    }
+}
+
+#message{
+    color: rgb(124, 192, 124);
+    text-shadow: 2px 2px black;
+    font-size: 60px;
+}
